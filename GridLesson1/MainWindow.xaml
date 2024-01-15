@@ -1,0 +1,101 @@
+﻿<Window x:Class="GridLesson1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GridLesson1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="500" Background="olive">
+    
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        
+        <!--Content-->
+            <Label Content="Sign Up" Grid.Row="0"
+                  Background="DarkOliveGreen"
+                   FontFamily="Verdana" 
+                   FontSize="25"
+                   HorizontalContentAlignment="Center" 
+                   VerticalContentAlignment="center"
+                   FontWeight="Bold"/>
+        
+        <Separator></Separator>
+        <TextBox Grid.Row="1" x:Name="txtUsername"
+                 Text="Username"
+                 TextWrapping="Wrap"
+                 FontFamily="Verdana" 
+                 FontSize="20" 
+                 BorderThickness="3"
+                 Width="250"
+                 Height="40"
+                 BorderBrush="DarkOliveGreen"
+                 HorizontalAlignment="center" 
+                 VerticalAlignment="center" GotFocus="ClearFN"/>
+
+        <TextBox Grid.Row="2" x:Name="txtFirstName"
+          Text="First name"
+          TextWrapping="Wrap"
+          FontFamily="Verdana" 
+          FontSize="20" 
+          BorderThickness="3"
+          Width="250"
+          Height="40"
+          BorderBrush="DarkOliveGreen"
+          HorizontalAlignment="center" 
+          VerticalAlignment="center" GotFocus="ClearFN"/>
+
+        <TextBox Grid.Row="3" x:Name="txtLastName"
+                 Text="Last name"
+                 TextWrapping="Wrap"
+                 FontFamily="Verdana" 
+                 FontSize="20" 
+                 BorderThickness="3"
+                 Width="250"
+                 Height="40"
+                 BorderBrush="DarkOliveGreen"
+                 HorizontalAlignment="center" 
+                 VerticalAlignment="center" GotFocus="ClearLN"/>
+
+        <PasswordBox Grid.Row="4" x:Name="txtPassword"
+         FontFamily="Verdana" 
+         FontSize="20" 
+         BorderThickness="3"
+         Width="250"
+         Height="40"
+         BorderBrush="DarkOliveGreen"
+         HorizontalAlignment="center" 
+         VerticalAlignment="center"/>
+
+        <TextBox Grid.Row="5" x:Name="txtEmail"
+         Text="Email"
+         TextWrapping="Wrap"
+         FontFamily="Verdana" 
+         FontSize="20" 
+         BorderThickness="3"
+         Width="250"
+         Height="40"
+         BorderBrush="DarkOliveGreen"
+         HorizontalAlignment="center" 
+         VerticalAlignment="center" GotFocus="ClearE"/>
+
+        <Button Content="Sign Up" Grid.Row="6"
+               FontSize="20" 
+               BorderThickness="3"
+               Height="50"
+               Width="100"   
+               Click="Button_Click_1"
+               BorderBrush="DarkOliveGreen"
+               Background="FloralWhite"
+               HorizontalAlignment="Center" 
+               VerticalAlignment="center" FontWeight="Bold"/>
+
+    </Grid>
+</Window>
